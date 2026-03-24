@@ -19,8 +19,8 @@ intro = st.Page(os.path.join(BASE_DIR, "pages", "1_Intro.py"), title="Introducti
 dataset = st.Page(os.path.join(BASE_DIR, "pages", "2_Data.py"), title="Dataset", icon="📊")
 visuals = st.Page(os.path.join(BASE_DIR, "pages", "3_Visualisations.py"), title="Visualisations", icon="🔍")
 model = st.Page(os.path.join(BASE_DIR, "pages", "4_MLModel.py"), title="Modelling and Evaluation", icon="🤖")
-prediction = st.Page(os.path.join(BASE_DIR, "pages", "5_Predictor.py"), title="Stroke Prediction", icon="🩺")
-ethics = st.Page(os.path.join(BASE_DIR, "pages", "6_Ethical Considerations.py"), title="Ethical Considerations", icon="⚖️")
+prediction = st.Page(os.path.join(BASE_DIR, "pages", "5_Predictor.py"), title="Patient Readmission Prediction", icon="🩺")
+ethics = st.Page(os.path.join(BASE_DIR, "pages", "6_Ethical_Considerations.py"), title="Ethical Considerations", icon="⚖️")
 
-pg = st.navigation([intro, dataset, visuals, model, prediction])
+pg = st.navigation([intro, dataset, visuals, model, prediction, ethics])
 pg.run()

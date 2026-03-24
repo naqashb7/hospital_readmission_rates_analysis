@@ -8,9 +8,17 @@ using a dataset of historic health and demographic information.
             
 ---
             
-## Background
-Diabetes patients being readmitted to hospital has been a big strain on healthcare systems. It can be very expensive so readmitting a patient can cost lots of money.
+# Background 
+
+Diabetes patients being readmitted to hospital has been a big strain on healthcare systems. It can be very expensive so readmitting a patient can cost lots of money. 
 By being able to predict why a patient is being readmitted, we can figure out ways to prevent readmission and tackle the issue at source.
+
+            
+The dataset being used records patient encounters in hospital. It looks at what occurred when they were in hospital, how long they stayed, what changes happened to their medications,
+what was their background and what did historical hospital visitation look like.
+
+
+
 ---
 
 ## Dataset background
@@ -31,9 +39,9 @@ By being able to predict why a patient is being readmitted, we can figure out wa
 ---
             
 ## Key Findings
-- Age was given the greatest weight as a predictor of stroke occurrence
-- Higher average glucose levels had a strong relationship with increased stroke risk
-- Individuals with medical histories that included hypertension and heart disease showed higher stroke rates
+- In the model, Age was given the 4th greatest weight as a predictor of readmittance. However, through analysis, age had a strong impact on readmittance.
+- African-Americans were seen to be more likely to be readmitted to hospital and also spent more time in hospital.
+- Individuals with medical histories that had higher numbers of Emergency visits in the year preceding the hospital encounter, were more likely to be readmitted to hospital.
 
 ---            
 
@@ -151,7 +159,7 @@ By being able to predict why a patient is being readmitted, we can figure out wa
     -Random Forest
 
 The Logistic Regression model was selected as the most suitable model 
-for stroke prediction, achieving a recall of 0.50 for stroke cases and an accuracy of 0.66.            
+for patient readmission prediction, achieving a recall of 0.50 for stroke cases and an accuracy of 0.66.            
             
             
 """, unsafe_allow_html=True)
