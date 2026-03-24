@@ -48,7 +48,7 @@ st.markdown("---")
 st.subheader("Model Comparison")
 st.info("""Each Model was assessed against a variety of criteria: 
 - Accuracy - this measures how accurate each model was against the dataset
-- Recall - this measures how many of the actual strokes documented were caught by the model
+- Recall - this measures how many of the actual readmitted records documented were caught by the model
 - F1-score - this calculates the balance of Precision and Recall. A high F1 score means that the model is really good with high precision and high recall.""")
 
 comparison_df = pd.DataFrame({
@@ -92,9 +92,9 @@ st.markdown("---")
 st.subheader("Key Metrics")
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Accuracy", "0.66")
-col2.metric("Stroke Recall", "0.50")
-col3.metric("Stroke Precision", "0.16")
-col4.metric("Stroke F1", "0.25")
+col2.metric("Readmitted record Recall", "0.50")
+col3.metric("Readmitted record Precision", "0.16")
+col4.metric("Readmitted record F1", "0.25")
 
 st.markdown("---")
 

@@ -159,7 +159,7 @@ what was their background and what did historical hospital visitation look like.
     -Random Forest
 
 The Logistic Regression model was selected as the most suitable model 
-for patient readmission prediction, achieving a recall of 0.50 for stroke cases and an accuracy of 0.66.            
+for patient readmission prediction, achieving a recall of 0.50 for patient readmission and an accuracy of 0.66.            
             
             
 """, unsafe_allow_html=True)
