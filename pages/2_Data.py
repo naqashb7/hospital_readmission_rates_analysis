@@ -3,7 +3,7 @@ import pandas as pd
 
 st.title("📊 Dataset Overview")
 
-df = pd.read_csv("data_files/ModellingData/stroke_data_modelling.csv")
+df = pd.read_csv("data_files/ModellingData/modelling_hospital_data.csv")
 
 
 st.markdown("""
@@ -13,8 +13,8 @@ st.markdown("""
 """)
 col1, col2, col3 = st.columns(3)
 col1.metric("Total Records", df.shape[0])
-col2.metric("Total Features", df.shape[1])
-col3.metric("Stroke Cases", df["stroke"].sum())
+col2.metric("Total Features (post encoding)", df.shape[1])
+col3.metric("Readmitted Cases", df["readmitted"].sum())
 
 st.markdown("---")
 st.markdown("""
@@ -59,10 +59,10 @@ st.markdown("""
 
 ## Distribution of Classes
 
-Below is a summary of the distributions of the majority class (No Stroke) and minority class(Stroke) in the Modelling dataset.            
+Below is a summary of the distributions of the majority class (Not Readmitted) and minority class(Readmitted) in the Modelling dataset.            
 
 
 """)
 col1, col2 = st.columns(2)
-col1.metric("No Stroke (0)", df[df["stroke"] == 0].shape[0])
-col2.metric("Stroke (1)", df[df["stroke"] == 1].shape[0])
+col1.metric("Not Readmitted (0)", df[df["readmitted"] == 0].shape[0])
+col2.metric("Readmitted (1)", df[df["readmitted"] == 1].shape[0])
